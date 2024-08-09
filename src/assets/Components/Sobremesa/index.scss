@@ -1,0 +1,29 @@
+@import '/src/Sass/variables.scss';
+@import '/src/Sass/navbar/ipad.scss';
+@import '/src/Sass/navbar/cell.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#cards-section {
+    p {
+        color: $secundary-color;
+        margin: 16px 0;
+    }
+
+    .cards {
+        display: flex;
+        gap: 16px;
+
+        flex-wrap: wrap;
+    }
+}

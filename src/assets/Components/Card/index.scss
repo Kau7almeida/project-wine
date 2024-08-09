@@ -1,0 +1,66 @@
+@import '/src/Sass/variables.scss';
+@import '/src/Sass/navbar/ipad.scss';
+@import '/src/Sass/navbar/cell.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, poppins;
+}
+
+.card {
+    padding: 30px 0;
+    width: 300px;
+    box-shadow: 
+    $box-shadow-offset-x
+    $box-shadow-offset-y
+    $box-shadow-blur-radius
+    $box-shadow-spread-radius
+    $box-shadow-color;
+
+    justify-content: center;
+    border-radius: 3px;
+
+    img {  
+        display: flex;
+        margin: 0px auto 0px;
+        cursor: pointer;
+        width: 80px;
+
+    }
+
+    .name {
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    
+    div {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .value {
+            font-size: 12px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: $primary-color;
+            color: $quartiary-color;
+            padding: 5px 30px;
+            font-weight: 400;
+            border-radius: 2px;
+        }
+    }
+    
+
+}
+

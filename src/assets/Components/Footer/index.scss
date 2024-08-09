@@ -1,0 +1,78 @@
+@import '/src/Sass/variables.scss';
+@import '/src/Sass/navbar/ipad.scss';
+@import '/src/Sass/navbar/cell.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: $secundary-color;
+    color: $quartiary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+
+    .container {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    #separacao {
+        display: flex;
+
+        #sobre {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: $quartiary-color;
+                    font-size: 13px;
+                }
+
+            }
+        }
+
+    }
+
+    #apps {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .rede {
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #line {
+        width: 80%;
+        height: 1px;
+        background-color: $quartiary-color;
+    }
+
+}

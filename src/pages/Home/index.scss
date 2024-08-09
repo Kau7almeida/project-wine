@@ -1,0 +1,131 @@
+@import '/src/Sass/variables.scss';
+
+$image: url('/public/img/fundo-home.png');
+$mockup: url('/public/img/mockup.png');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.space {
+    height: 90px;
+}
+
+.space-dois {
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: $terciary-color;
+    margin: 0px auto 30px;
+    font-weight: 400;
+}
+
+.paragrafo-one {
+    text-align: center;
+    color: $secundary-color;
+    width: 570px;
+    margin: 30px auto 60px;
+}
+
+.paragrafo-dois {
+    text-align: center;
+    color: $secundary-color;
+    width: 570px;
+    margin: 220px auto -150px;
+
+    span {
+        color: $terciary-color;
+        font-weight: bold;
+    }
+    
+}
+
+.image {
+    background-image: $image;
+    height: 410px;
+    background-repeat: repeat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#div-one {
+    h2 {
+        color: $quartiary-color;
+        font-weight: 400;
+        position: relative;
+        font-size: 40px;
+        top: 130px;
+    }
+}
+
+#div-one-img {
+
+    display: flex;
+    justify-content: end;
+
+    img {
+        width: 600px;
+        position: relative;
+        top: 90px;
+    }
+
+    section {
+        position: relative;
+        top: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+    
+        h3 {
+            text-align: center;
+            color: $secundary-color;
+            font-weight: 400;
+            font-size: 40px;
+        }
+    
+        #btn-vinhos {
+    
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+    
+            #btn-usado {
+                cursor: pointer;
+                border: none;
+                padding: 5px 50px;
+                color: $quartiary-color;
+                background-color: $primary-color;
+                box-shadow:
+                $box-shadow-offset-x $box-shadow-offset-y
+                $box-shadow-blur-radius
+                $box-shadow-spread-radius
+                $box-shadow-color;
+            }
+    
+            #btn-nao-usado {
+                cursor: pointer;
+                border: solid 1px $primary-color;
+                padding: 5px 50px;
+                color: $primary-color;
+                background-color: $quartiary-color;
+                box-shadow:
+                $box-shadow-offset-x $box-shadow-offset-y
+                $box-shadow-blur-radius
+                $box-shadow-spread-radius
+                $box-shadow-color;
+            }
+        }
+    }
+}
