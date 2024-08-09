@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com");
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: #fff;
+
+}
+
+
+
+#container-formulario {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .content-formulario {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        width: 450px;
+        height: 650px;
+        box-shadow: none;        
+    }
+
+    input {
+        background-color: rgba(255, 255, 255, 1);
+        width: 400px;
+        height: 25px;
+        border-radius: 4px;
+        border: 1px solid rgba(189, 189, 189, 1);
+        padding: 5px;
+        outline: none;
+        
+    }
+    
+
+    h3 {
+        display: flex;
+        color: rgba(87, 87, 87, 1);
+        width: 400px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 29px;
+        justify-content: space-between;
+        align-items: center;
+        border-collapse: collapse;
+        border-bottom: 1px solid rgba(189, 189, 189, 1);
+        text-transform: uppercase;
+
+        >i {
+            font-size: 15px;
+        }
+    }
+
+    span{
+        color: red;
+        font-size: 8px;
+        width: 400px;
+        position: absolute;
+    }
+
+
+
+
+
+    .dados-pessoais {
+        display: flex;
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 5px;
+
+    }
+
+    .contato {
+        display: flex;
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+
+        
+    }
+
+    .endereco {
+        display: flex;
+        width: 450px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+
+
+        #logradouro {
+            background-color: #BDBDBD;
+            width: 400px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+        }
+
+        .num {
+            display: flex;
+            justify-content: center;
+
+            #numero {
+                background-color: rgba(255, 255, 255, 1);
+                width: 77px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+            }
+
+            #complemento {
+                background-color: rgba(255, 255, 255, 1);
+                width: 313px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+            }
+        }
+
+        #bairro {
+            background-color: #BDBDBD;
+            width: 400px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+        }
+
+        .city {
+            display: flex;
+            justify-content: center;
+
+            #cidade{
+                background-color: #BDBDBD;
+                    width: 126.5px;
+                    height: 25px;
+                    border-radius: 4px;
+                    border: 1px solid rgba(189, 189, 189, 1);
+                    padding: 5px;
+            }
+
+            #estado {
+                background-color: #BDBDBD;
+                width: 126.5px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+            }
+
+            #pais {
+                background-color: #BDBDBD;
+                width: 126.5px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.container-campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #salvar-alteracoes-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        width: 400px;
+        height: 35px;
+        left: 50px;
+        border-radius: 4px;
+        border: 0;
+        padding: 15px;
+        margin-top: 10px;
+        gap: 24px;
+        background-color: #38092E;
+
+        &:hover {
+            background-color: #641052;
+        }
+    }
+}

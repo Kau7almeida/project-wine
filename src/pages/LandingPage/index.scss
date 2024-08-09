@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com");
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+body {
+    $quartiary-color: #FAF9F6;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container-landing {
+    display: flex;
+    background-color: #1a1a1a;
+    width: 640px;
+    height: 640px;
+    border-radius: 6px;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+
+    .content-about {
+        display: flex;
+        margin-top: 35px;
+
+        .about-vinho {
+            align-items: center;
+
+
+
+            .history {
+                width: 417px;
+                height: 131px;
+                margin-left: 38px;
+
+                .titulo {
+                    display: flex;
+                    height: 62px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #901776;
+                    text-align: justify;
+                    flex-direction: column;
+                }
+
+                .texto {
+                    color: white;
+                    height: 70px;
+                    font-weight: 400;
+                    font-size: 7px;
+                    line-height: 10px;
+                    text-align: justify;
+
+                    span {
+                        color: #901776;
+                        font-weight: 400;
+                        font-size: 7px;
+                        line-height: 10px;
+                        text-align: justify;
+
+                    }
+                }
+            }
+
+            .vinificacao {
+                margin-left: 38px;
+                margin-top: 16px;
+                width: 417px;
+                height: 66px;
+
+                .titulo {
+                    height: 21px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #901776;
+                    text-align: start;
+
+                }
+
+                .texto {
+                    margin-top: 5px;
+                    color: white;
+                    height: 45px;
+                    font-weight: 400;
+                    font-size: 7px;
+                    line-height: 10px;
+                    text-align: justify;
+                }
+
+            }
+
+            .about {
+
+                margin-left: 38px;
+                margin-top: 16px;
+                width: 417px;
+                height: 85px;
+
+                .titulo {
+
+                    height: 21px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #901776;
+                    text-align: start;
+
+                }
+
+                .texto {
+                    margin-top: 5px;
+                    color: white;
+                    height: 45px;
+                    font-weight: 400;
+                    font-size: 7px;
+                    line-height: 10px;
+                    text-align: justify;
+                }
+            }
+        }
+
+
+    }
+
+    .content-caracteristicas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 563px;
+        height: 42px;
+        margin-top: 20px;
+
+
+        .linha1 {
+            display: flex;
+            flex-wrap: wrap;
+
+            .titulo {
+                height: 18px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: #901776;
+                text-align: start;
+
+            }
+
+            .texto {
+                color: white;
+                height: 14px;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 14px;
+                text-align: justify;
+            }
+
+            .criticos {
+                width: 76px;
+                height: 32px;
+            }
+
+
+            .tamanho-garrafa {
+                width: 133px;
+                height: 32px;
+                margin-left: 18px;
+            }
+
+            .regiao {
+                width: 46px;
+                height: 32px;
+                margin-left: 18px;
+            }
+
+            .produtor {
+                width: 87px;
+                height: 32px;
+                margin-left: 18px;
+            }
+
+            .teor-alcoolico {
+                width: 87px;
+                height: 32px;
+                margin-left: 18px;
+            }
+        }
+    }
+
+    .content-caracteristicas2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 563px;
+        height: 74px;
+
+
+        .linha2 {
+            display: flex;
+            flex-wrap: wrap;
+
+            .titulo {
+                height: 18px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: #901776;
+                text-align: start;
+
+            }
+
+            .texto {
+                color: white;
+                height: 14px;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 14px;
+                text-align: justify;
+            }
+
+            .pais {
+                width: 76px;
+                height: 32px;
+            }
+
+
+            .harmonizacao {
+                width: 133px;
+                height: 32px;
+                margin-left: 18px;
+
+                >.texto {
+                    display: flex;
+                    color: white;
+                    height: 14px;
+                    font-weight: 400;
+                    font-size: 9px;
+                    line-height: 14px;
+                    text-align: justify;
+                    flex-direction: column;
+                }
+
+
+            }
+
+            .tipo {
+                width: 46px;
+                height: 32px;
+                margin-left: 18px;
+            }
+
+            .uvas {
+                width: 87px;
+                height: 74px;
+                margin-left: 18px;
+            }
+
+            .temperatura-servico {
+                width: 149px;
+                height: 32px;
+                margin-left: 18px;
+            }
+        }
+    }
+
+    .comprar {
+        background-color: #901776;
+        $quartiary-color: #fff;
+        width: 566px;
+        height: 36px;
+        margin-top: 60px;
+        border: 0;
+        border-radius: 2px;
+
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+
+        
+    }
+}

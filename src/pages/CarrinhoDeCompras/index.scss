@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com");
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+body {
+    background-color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cabecalho {
+    background-color: rgba(242, 242, 242, 1);
+    width: 100%;
+    min-height: none;
+    margin-left: none;
+
+    box-shadow: 5px 5px 5px darkgrey;
+
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        
+
+        .logo{
+            width: 180px;
+
+            img {
+                height: 70px;
+            }
+        }
+
+
+
+        .informacao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            line-height: 77px;
+            font-weight: 400;
+            gap: 20px;
+
+            >button {
+                color: #38092E;
+                background-color: transparent;
+                border: 0;
+
+            }
+        }
+
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+
+            >button {
+                width: 53px;
+                height: 53px;
+                background-color: transparent;
+                border: 0;
+
+                i {
+                    font-size: 20px;
+                    color: #38092E;
+                }
+            }
+        }
+    }
+}
+
+
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+
+    .titulo-carrinho {
+        display: flex;
+        justify-content: center;
+        color: black;
+        padding: 15px 0 15px 0;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 80px;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+
+        section {
+            color: #38092E;
+            flex: 1;
+            height: 250px;
+            margin-left: 180px;
+
+
+
+        }
+
+        aside {
+            min-width: 340px;
+            margin-right: 180px;
+        }
+    }
+}
+
+#itens {
+    width: 820px;
+    border-collapse: collapse;
+
+    thead {
+        tr {
+            border-bottom: 3px solid #ddd;
+
+            th {
+                text-align: justify;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                color: #38092E;
+                font-size: 14px;
+
+                .produto {
+                    width: 100%;
+                }
+
+
+            }
+
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 3px solid #ddd;
+
+            &:last-child {
+                border: 0;
+            }
+
+            td {
+                padding: 30px 0;
+            }
+        }
+    }
+}
+
+.content-produto {
+    display: flex;
+    align-items: center;
+
+    img {
+        border-radius: 6px;
+        width: 80px;
+        height: 200px;
+    }
+
+    .info-produto {
+        margin-left: 20px;
+
+        .nome {
+            color: #38092E;
+            margin-bottom: 10px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .litragem {
+            color: #38092E;
+            font-size: 12px;
+        }
+    }
+}
+
+.lixeira {
+    background-color: #ddd;
+    color: #38092E;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+    &:hover {
+        background-color: #ccc;
+    }
+
+}
+
+.quantidade {
+    background-color: #ddd;
+    display: inline-flex;
+    justify-content: space-around;
+    min-width: 60px;
+    border-radius: 40px;
+    overflow: hidden;
+    height: 30px;
+
+
+
+    button {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 0;
+        padding: 0 10px;
+        font-size: 15px;
+        height: 100%;
+        color: #38092E;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    span {
+        display: flex;
+        margin: 0 15px;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+
+aside {
+    margin-left: 30px;
+
+
+    .box {
+        margin-bottom: 15px;
+        border: 1px solid #38092E;
+        border-radius: 7px;
+
+        .resumo {
+            padding: 8px 12px;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+
+
+        }
+
+        .informacoes {
+            padding: 6px 20px;
+
+            >div {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 7px;
+                font-size: 12px;
+            }
+
+            button {
+                color: #38092E;
+                background-color: transparent;
+                border: 0;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+
+                i {
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+        .total {
+            color: white;
+            background-color: #38092E;
+            padding: 6px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+
+            >div {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .finalizar {
+        background-color: #38092E;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0;
+        border-radius: 7px;
+        padding: 10px 0;
+        width: 100%;
+
+        &:hover {
+            background-color: #550e45;
+        }
+    }
+
+    .adicionar {
+        margin-top: 10px;
+        background-color: white;
+        color: #38092E;
+        width: 100%;
+        border: solid 1px #38092E;
+        border-radius: 7px;
+        padding: 10px 0;
+        text-align: center;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}

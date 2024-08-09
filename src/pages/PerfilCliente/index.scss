@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: #fff;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+    h1{
+        color: #38092E;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 77px;
+        margin-left: 240px;
+    }
+}
+
+#container-formulario {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    
+
+
+    .content-formulario {
+        display: flex;
+        border-radius: 5px;
+        width: 350px;
+        height: 485px;
+        box-shadow: 5px 5px 10px darkgray;
+    }
+
+    h3 {
+        display: flex;
+        color: rgba(87, 87, 87, 1);
+        width: 300px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 29px;
+        justify-content: space-between;
+        align-items: center;
+        border-collapse: collapse;
+        border-bottom: 1px solid rgba(189, 189, 189, 1);
+        text-transform: uppercase;
+
+        >i {
+            font-size: 15px;
+        }
+
+    }
+
+
+
+
+    .dados-pessoais {
+        display: flex;
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+
+
+        #nome {
+
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+
+
+        }
+
+        #email {
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+
+        }
+
+        #senha {
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #confirmar-senha {
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+
+    .contato {
+        display: flex;
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+
+        #telefone {
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #celular {
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+
+    .endereco {
+        display: flex;
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+
+        #cep {
+            background-color: rgba(255, 255, 255, 1);
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+
+        }
+
+        #logradouro {
+            background-color: #BDBDBD;
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .num {
+            display: flex;
+            justify-content: center;
+
+            #numero {
+                background-color: rgba(255, 255, 255, 1);
+                width: 30px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+                margin: 5px;
+            }
+
+            #complemento {
+                background-color: rgba(255, 255, 255, 1);
+                width: 260px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+
+        #bairro {
+            background-color: #BDBDBD;
+            width: 300px;
+            height: 25px;
+            border-radius: 4px;
+            border: 1px solid rgba(189, 189, 189, 1);
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .city {
+            display: flex;
+            justify-content: center;
+
+
+            #cidade {
+                background-color: #BDBDBD;
+                width: 93px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+                margin: 5px;
+            }
+
+            #estado {
+                background-color: #BDBDBD;
+                width: 93px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+                margin: 5px;
+            }
+
+            #pais {
+                background-color: #BDBDBD;
+                width: 93px;
+                height: 25px;
+                border-radius: 4px;
+                border: 1px solid rgba(189, 189, 189, 1);
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+    }
+
+    .apresenta-info {
+        
+
+        .content-apresenta-info {
+            display: flex;
+            align-items: center;
+            width: 240px;
+            height: 63px;
+            border: 1px solid #38092E;
+            border-radius: 8px;
+            padding: 24px;
+            gap: 18px;
+
+
+        }
+
+        .icone {
+            color: rgba(87, 87, 87, 1);
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 25px;
+            }
+
+        }
+
+
+        .seu-nome {
+            color: rgba(87, 87, 87, 1);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .seu-email {
+            color: rgba(87, 87, 87, 1);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 21px;
+        }
+
+
+
+
+        >button {
+            margin-top: 20px;
+            background-color: #38092E;
+            color: white;
+            width: 240px;
+            height: 30px;
+            border-radius: 4px;
+            border: 0;
+        }
+
+    }
+}
+
+#salvar-alteracoes-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 350px;
+    height: 30px;
+    left: 50px;
+    border-radius: 50px;
+    border: 0;
+    padding: 15px;
+    margin-top: 20px;
+    gap: 24px;
+    background-color: #38092E;
+}
