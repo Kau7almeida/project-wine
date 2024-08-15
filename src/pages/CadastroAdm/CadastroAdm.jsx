@@ -9,7 +9,7 @@ function CadastroAdm() {
     return (
         <>
             <ContentCadastroAdm />
-            <h1>teste</h1>
+            
 
         </>
 

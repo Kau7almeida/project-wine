@@ -8,7 +8,7 @@ function TableRow({data, removerItem, atualizarQuantidade}) {
             <tr>
                 <td>
                     <div className="content-produto">
-                        <img src="src/assets/imagens/image 1.png" alt="imagem garrafa de vinho"></img>
+                        <img src="https://images.divinho.com.br/media/catalog/product/cache/b7d320e39333d0f7a197a4ddb51399f4/v/i/vinho_ch_teau_margaux_grand_cru_class_2006.png" alt="imagem garrafa de vinho"></img>
                         <div className="info-produto">
                             <div className="nome">
                                 <span>{data.name}</span>

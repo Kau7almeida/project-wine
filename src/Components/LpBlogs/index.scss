@@ -1,0 +1,74 @@
+@import '/src/Sass/variables.scss';
+
+$image-blog-dicas: url('/public/img/fundo-blog-dicas.png');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, poppins;
+}
+
+.fundo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.9);
+}
+
+#btn-lp {
+    justify-content: end;
+    position: fixed;
+    top: 50px;
+    left: 1150px;
+
+    width: 30px;
+}
+
+.div-lp-blogs {
+    background-color: #fff;
+    margin: 0px auto;
+    width: 60%;
+    
+    border-radius: 10px;
+    box-shadow: 
+    $box-shadow-offset-x
+    $box-shadow-offset-y
+    $box-shadow-blur-radius
+    $box-shadow-spread-radius
+    $box-shadow-color;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+
+        .container {
+            flex-direction: column;
+            padding: 5px 0 5px;
+
+            h5 {
+                color: $secundary-color;
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 5px;
+
+                span {
+                    color: $terciary-color;
+                }
+            }
+
+            span {
+                color: $terciary-color;
+                margin: 0px 0px 14px;
+            }
+
+            p {
+                color: $secundary-color;
+                font-size: 12px;
+            }
+        }
+    }

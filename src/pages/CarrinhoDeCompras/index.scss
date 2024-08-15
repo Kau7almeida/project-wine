@@ -21,75 +21,13 @@ button {
     cursor: pointer;
 }
 
-.cabecalho {
-    background-color: rgba(242, 242, 242, 1);
-    width: 100%;
-    min-height: none;
-    margin-left: none;
-
-    box-shadow: 5px 5px 5px darkgrey;
-
-
-    .menu {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 70px;
-        
-
-        .logo{
-            width: 180px;
-
-            img {
-                height: 70px;
-            }
-        }
-
-
-
-        .informacao {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 12px;
-            line-height: 77px;
-            font-weight: 400;
-            gap: 20px;
-
-            >button {
-                color: #38092E;
-                background-color: transparent;
-                border: 0;
-
-            }
-        }
-
-        .navegacao {
-            display: flex;
-            justify-content: space-between;
-
-            >button {
-                width: 53px;
-                height: 53px;
-                background-color: transparent;
-                border: 0;
-
-                i {
-                    font-size: 20px;
-                    color: #38092E;
-                }
-            }
-        }
-    }
-}
-
-
-
-main {
+.main-carrinho {
     width: 100vw;
     min-height: 100vh;
+    margin: 0 auto;
 
     .titulo-carrinho {
+        width: 100%;
         display: flex;
         justify-content: center;
         color: black;
@@ -103,7 +41,7 @@ main {
         display: flex;
         width: 100%;
 
-        section {
+        .section-itens {
             color: #38092E;
             flex: 1;
             height: 250px;

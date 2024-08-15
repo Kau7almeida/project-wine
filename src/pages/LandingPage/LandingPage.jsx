@@ -140,7 +140,7 @@ function LandingPage(dataText) {
 
                     </div>
 
-                    <button className="comprar" onClick="adcionarItem()"><Link to={"/CarrinhoDeCompras"}>Comprar</Link></button>
+                    <Link to={"/CarrinhoDeCompras"}><button className="comprar" onClick="Comprar()">Comprar</button></Link>
 
                 </div>
 

@@ -20,12 +20,12 @@ function Content(dadosLogin) {
 
             <div className='imput-box'>
                 <div className='box-login'>
-                    <label for="login">Login</label>
+                    <label htmlFor="login">Login</label>
                     <input type="text" name="login-cliente" id="login-cliente" placeholder='Digite seu email aqui'></input>
                 </div>
 
                 <div className='box-senha'>
-                    <label for="senha">Senha</label>
+                    <label htmlFor="senha">Senha</label>
                     <input type="text" name="senha-cliente" id="senha-cliente" placeholder='Digite sua senha aqui'></input>
                 </div>
             </div>

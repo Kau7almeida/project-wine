@@ -1,0 +1,74 @@
+@import '/src/Sass/variables.scss';
+@import '/src/Sass/navbar/ipad.scss';
+@import '/src/Sass/navbar/cell.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-sobremesa {
+    position: relative;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+
+    h3 {
+        text-align: center;
+        color: $secundary-color;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    #btn-vinhos {
+
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        #btn-usado {
+            cursor: pointer;
+            border: none;
+            padding: 5px 50px;
+            color: $quartiary-color;
+            background-color: $primary-color;
+            box-shadow:
+            $box-shadow-offset-x $box-shadow-offset-y
+            $box-shadow-blur-radius
+            $box-shadow-spread-radius
+            $box-shadow-color;
+        }
+
+        #btn-nao-usado {
+            cursor: pointer;
+            border: solid 1px $primary-color;
+            padding: 5px 50px;
+            color: $primary-color;
+            background-color: $quartiary-color;
+            box-shadow:
+            $box-shadow-offset-x $box-shadow-offset-y
+            $box-shadow-blur-radius
+            $box-shadow-spread-radius
+            $box-shadow-color;
+        }
+    }
+}
+
+#cards-section {
+    p {
+        color: $secundary-color;
+        margin: 16px 0;
+    }
+
+    .cards {
+        display: flex;
+        gap: 16px;
+
+        flex-wrap: wrap;
+    }
+}

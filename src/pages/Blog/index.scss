@@ -1,0 +1,81 @@
+@import '/src/Sass/variables.scss';
+
+$image-blog: url('/public/img/fundo-blog.png');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.space-blog {
+    height: 0px;
+}
+
+.space-dois-blog {
+    height: 360px;
+}
+
+.section-blog{
+
+    .h1-blog {
+        text-align: center;
+        color: $terciary-color;
+        margin: -60px auto 0px;
+        font-weight: 400;
+    }
+    
+    .paragrafo-one-blog {
+        text-align: center;
+        color: $secundary-color;
+        width: 570px;
+        margin: 0px auto 60px;
+    }
+
+}
+
+
+.main-blog {
+
+    position: relative;
+    top: 150px;
+
+    .image-blog {
+        background-image: $image-blog;
+        height: 400px;
+    }
+
+
+    .blog {
+        margin-top: -100px;
+        h4 {
+            color: $primary-color;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .text {
+            color: $terciary-color;
+        }
+
+        p {
+            text-align: justify;
+            color: $secundary-color;
+        }
+
+        button {
+            border: none;
+            padding: 5px 20px;
+            width: 150px;
+            background-color: $primary-color;
+            color: $quartiary-color;
+            cursor: pointer;
+        }
+    }
+}

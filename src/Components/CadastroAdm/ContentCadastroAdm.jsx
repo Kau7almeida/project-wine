@@ -13,7 +13,7 @@ const BACKGROUND_STYLE = {
 
 }
 
-function ContentCadstroAdm({ isOpen }) {
+function ContentCadastroAdm({ isOpen }) {
     const { register, handleSubmit, watch, formState: { errors } } = useForm()
 
     function onSubmit(data) {
@@ -98,4 +98,4 @@ function ContentCadstroAdm({ isOpen }) {
 
 
 
-export default ContentCadstroAdm;
+export default ContentCadastroAdm;

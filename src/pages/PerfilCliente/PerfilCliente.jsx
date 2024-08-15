@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.scss'
-import Header from '../../Components/CarrinhoDeCompras/Header';
 import FormCliente from '../../Components/PerfilCliente/FormCliente';
 import Informacoes from '../../Components/PerfilCliente/Informacoes';
 import TituloCliente from '../../Components/PerfilCliente/TituloCliente';
+import Navbar from '../../Components/Navbar/Navbar';
 
 
 function PerfilCliente() {
     return (
         <>
             <header>
-                <Header />
+                <Navbar />
             </header>
 
             <div className='titulo'>

@@ -1,0 +1,65 @@
+@import '/src/Sass/variables.scss';
+
+// navbar
+
+@media (max-width: 480px) {
+    .container {
+        width: 80%;
+
+        ul {
+            position: relative;
+            top: -40px;
+        }
+    }
+
+    #box-menu {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+
+        position: absolute;
+        top: 60px;
+        right: 0px;
+
+        background-color: #b6b6b6;
+        width: 50vw;
+        height: 100vh;
+
+        ul {
+            display: flex;
+            gap: 30px;
+            margin-top: 60px;
+
+            list-style: none;
+            text-align: center;
+
+            .links-navbar-box {
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                    font-size: 10px;
+                }
+            }
+
+            .symbols-navbar-box {
+                width: 10px;
+            }
+
+        }
+    }
+
+    #box-menu.active {
+        display: flex;
+        width: 50vw;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+// ----------------------------------------------------------------

@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import './index.scss'
 import TableRow from "../../Components/CarrinhoDeCompras/TableRow";
-import Header from "../../Components/CarrinhoDeCompras/Header";
 import Title from "../../Components/CarrinhoDeCompras/Title";
 import Resume from "../../Components/CarrinhoDeCompras/Resume";
 import { Link } from "react-router-dom";
 import { api } from "../../Provedor";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 
 
@@ -84,12 +85,12 @@ function CarrinhoDeCompras() {
     return (
         <>
             <header>
-                <Header />
+                <Navbar/>
             </header>
-            <main>
+            <main className="main-carrinho sem-barra">
                 <Title titulo='Carrinho de Compras' />
                 <div className="content">
-                    <section>
+                    <div className="section-itens">
                         <table id="itens">
                             <thead>
                                 <tr>
@@ -106,16 +107,19 @@ function CarrinhoDeCompras() {
                             </tbody>
 
                         </table>
-                    </section>
+                    </div>
 
                     <aside>
                         <Resume total = {valorCarrinho} />
                         <button className="finalizar">Finalizar compra</button>
                         <button className="adicionar" onClick={adicionarItem}>Adicionar mais itens</button>
                     </aside>
-
                 </div>
+                
             </main>
+
+            
+            <Footer />
 
         </>
     );
